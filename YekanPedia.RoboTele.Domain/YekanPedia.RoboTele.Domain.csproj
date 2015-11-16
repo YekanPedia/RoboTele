@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +41,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extension\DateTimeHelper.cs" />
+    <Compile Include="Extension\RoboTeleExtension.cs" />
+    <Compile Include="Http\HttpData.cs" />
+    <Compile Include="Http\HttpFile.cs" />
+    <Compile Include="Http\HttpFileList.cs" />
+    <Compile Include="Http\HttpParameter.cs" />
+    <Compile Include="Http\HttpParameterList.cs" />
+    <Compile Include="Json\JsonData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\Methods\Bases\BaseMethodRequest.cs" />
+    <Compile Include="Requests\Methods\ForwardMessageRequest.cs" />
+    <Compile Include="Requests\Methods\GetFileRequest.cs" />
+    <Compile Include="Requests\Methods\GetMeRequest.cs" />
+    <Compile Include="Requests\Methods\GetUpdatesRequest.cs" />
+    <Compile Include="Requests\Methods\GetUserProfilePhotosRequest.cs" />
+    <Compile Include="Requests\Methods\SendAudioRequest.cs" />
+    <Compile Include="Requests\Methods\SendChatActionRequest.cs" />
+    <Compile Include="Requests\Methods\SendDocumentRequest.cs" />
+    <Compile Include="Requests\Methods\SendLocationRequest.cs" />
+    <Compile Include="Requests\Methods\SendMessageRequest.cs" />
+    <Compile Include="Requests\Methods\SendPhotoRequest.cs" />
+    <Compile Include="Requests\Methods\SendStickerRequest.cs" />
+    <Compile Include="Requests\Methods\SendVideoRequest.cs" />
+    <Compile Include="Requests\Methods\SendVoiceRequest.cs" />
+    <Compile Include="Requests\Methods\SetWebhookRequest.cs" />
+    <Compile Include="Requests\Types\ActionRequest.cs" />
+    <Compile Include="Requests\Types\Bases\BaseTypeRequest.cs" />
+    <Compile Include="Requests\Types\Enums.cs" />
+    <Compile Include="Requests\Types\ForceReplyRequest.cs" />
+    <Compile Include="Requests\Types\InputFileRequest.cs" />
+    <Compile Include="Requests\Types\ReplyKeyboardHideRequest.cs" />
+    <Compile Include="Requests\Types\ReplyKeyboardMarkupRequest.cs" />
+    <Compile Include="Requests\Types\ReplyMarkupRequest.cs" />
+    <Compile Include="Responses\Methods\Bases\BaseMethodResponse.cs" />
+    <Compile Include="Responses\Methods\ForwardMessageResponse.cs" />
+    <Compile Include="Responses\Methods\GetFileResponse.cs" />
+    <Compile Include="Responses\Methods\GetMeResponse.cs" />
+    <Compile Include="Responses\Methods\GetUpdatesResponse.cs" />
+    <Compile Include="Responses\Methods\GetUserProfilePhotosResponse.cs" />
+    <Compile Include="Responses\Methods\SendAudioResponse.cs" />
+    <Compile Include="Responses\Methods\SendChatActionResponse.cs" />
+    <Compile Include="Responses\Methods\SendDocumentResponse.cs" />
+    <Compile Include="Responses\Methods\SendLocationResponse.cs" />
+    <Compile Include="Responses\Methods\SendMessageResponse.cs" />
+    <Compile Include="Responses\Methods\SendPhotoResponse.cs" />
+    <Compile Include="Responses\Methods\SendStickerResponse.cs" />
+    <Compile Include="Responses\Methods\SendVideoResponse.cs" />
+    <Compile Include="Responses\Methods\SetWebhookResponse.cs" />
+    <Compile Include="Responses\Types\AudioResponse.cs" />
+    <Compile Include="Responses\Types\ChatResponse.cs" />
+    <Compile Include="Responses\Types\ContactResponse.cs" />
+    <Compile Include="Responses\Types\DocumentResponse.cs" />
+    <Compile Include="Responses\Types\Enums.cs" />
+    <Compile Include="Responses\Types\FileResponse.cs" />
+    <Compile Include="Responses\Types\LocationResponse.cs" />
+    <Compile Include="Responses\Types\MessageResponse.cs" />
+    <Compile Include="Responses\Types\PhotoSizeResponse.cs" />
+    <Compile Include="Responses\Types\StickerResponse.cs" />
+    <Compile Include="Responses\Types\UpdateResponse.cs" />
+    <Compile Include="Responses\Types\UserProfilePhotosResponse.cs" />
+    <Compile Include="Responses\Types\UserResponse.cs" />
+    <Compile Include="Responses\Types\VideoResponse.cs" />
+    <Compile Include="Responses\Types\VoiceResponse.cs" />
+    <Compile Include="RoboTele.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
