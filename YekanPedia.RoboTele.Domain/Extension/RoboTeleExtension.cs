@@ -6,7 +6,7 @@
 
     public static class RoboTeleExtension
     {
-        public static byte[] DownloadFile(this RoboTele bot, GetFileResponse getFileResponse)
+        public static byte[] DownloadFile(this Robot bot, GetFileResponse getFileResponse)
         {
             if (string.IsNullOrEmpty(getFileResponse?.Result?.FilePath))
                 return null;
@@ -14,7 +14,7 @@
             {
                 try
                 {
-                    return client.DownloadData($"{RoboTele.ApiUrl}/file/bot{bot.ApiToken}/{getFileResponse.Result.FilePath}");
+                    return client.DownloadData($"{Robot.ApiUrl}/file/bot{bot.ApiToken}/{getFileResponse.Result.FilePath}");
                 }
                 catch
                 {
@@ -23,7 +23,7 @@
             }
         }
 
-        public static async Task<byte[]> DownloadFileAsync(this RoboTele bot, GetFileResponse getFileResponse)
+        public static async Task<byte[]> DownloadFileAsync(this Robot bot, GetFileResponse getFileResponse)
         {
             if (string.IsNullOrEmpty(getFileResponse?.Result?.FilePath))
                 return null;
@@ -32,7 +32,7 @@
             {
                 try
                 {
-                    return await client.DownloadDataTaskAsync($"{RoboTele.ApiUrl}/file/bot{bot.ApiToken}/{getFileResponse.Result.FilePath}");
+                    return await client.DownloadDataTaskAsync($"{Robot.ApiUrl}/file/bot{bot.ApiToken}/{getFileResponse.Result.FilePath}");
                 }
                 catch
                 {

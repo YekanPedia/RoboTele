@@ -104,7 +104,7 @@
     <Compile Include="Responses\Types\UserResponse.cs" />
     <Compile Include="Responses\Types\VideoResponse.cs" />
     <Compile Include="Responses\Types\VoiceResponse.cs" />
-    <Compile Include="RoboTele.cs" />
+    <Compile Include="Robot.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

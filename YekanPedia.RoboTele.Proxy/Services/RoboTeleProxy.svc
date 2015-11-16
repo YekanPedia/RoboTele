@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="YekanPedia.RoboTele.Proxy.Services.RoboTeleProxy" CodeBehind="RoboTeleProxy.svc.cs" %>
