@@ -1,6 +1,4 @@
-﻿
-
-namespace YekanPedia.RoboTele.Proxy.Services
+﻿namespace YekanPedia.RoboTele.Proxy.Services
 {
     using System;
     using Domain;
@@ -18,17 +16,15 @@ namespace YekanPedia.RoboTele.Proxy.Services
         {
             try
             {
-
                 if (security.UserName == AppSettings.UserName && security.Password == AppSettings.Password)
                     foreach (var item in model)
                     {
                         Bot.SendMessage(new SendMessageRequest
                         {
                             ChatId = item.ChatId,
-                            Text = item.Message,
+                            Text = item.Message
                         });
                     }
-
             }
             catch (Exception e)
             {
