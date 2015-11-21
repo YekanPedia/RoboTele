@@ -8,6 +8,7 @@
 
     public class RoboTeleProxy : IRoboTeleProxy
     {
+        string a = nameof(Robot);
         const int UpdateTimeoutInSeconds = 30;
         static Robot _bot;
         static Robot Bot => _bot ?? (_bot = new Robot(AppSettings.ApiKey));
