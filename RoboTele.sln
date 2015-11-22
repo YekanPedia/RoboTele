@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{0D1CB7A4-5A4A-4873-8710-66DF537FB32C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Domain", "YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj", "{A1BFE82A-1628-4A47-9C25-65EC1532CF66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{1D75065A-9865-4E7D-BBCE-FA085B90000C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Proxy", "YekanPedia.RoboTele.Proxy\YekanPedia.RoboTele.Proxy.csproj", "{A9FC7CAC-69D9-4E97-A406-54FEBF670741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
