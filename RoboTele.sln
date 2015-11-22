@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Domain", "YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj", "{A1BFE82A-1628-4A47-9C25-65EC1532CF66}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{1D75065A-9865-4E7D-BBCE-FA085B90000C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Proxy", "YekanPedia.RoboTele.Proxy\YekanPedia.RoboTele.Proxy.csproj", "{A9FC7CAC-69D9-4E97-A406-54FEBF670741}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Domain", "YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj", "{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,20 +17,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1BFE82A-1628-4A47-9C25-65EC1532CF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1BFE82A-1628-4A47-9C25-65EC1532CF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1BFE82A-1628-4A47-9C25-65EC1532CF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1BFE82A-1628-4A47-9C25-65EC1532CF66}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A1BFE82A-1628-4A47-9C25-65EC1532CF66} = {0D1CB7A4-5A4A-4873-8710-66DF537FB32C}
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741} = {1D75065A-9865-4E7D-BBCE-FA085B90000C}
+		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E} = {693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}
 	EndGlobalSection
 EndGlobal

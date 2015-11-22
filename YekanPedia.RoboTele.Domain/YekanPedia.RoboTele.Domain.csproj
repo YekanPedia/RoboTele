@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1BFE82A-1628-4A47-9C25-65EC1532CF66}</ProjectGuid>
+    <ProjectGuid>{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YekanPedia.RoboTele.Domain</RootNamespace>
@@ -107,7 +107,6 @@
     <Compile Include="Responses\Types\VoiceResponse.cs" />
     <Compile Include="Robot.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

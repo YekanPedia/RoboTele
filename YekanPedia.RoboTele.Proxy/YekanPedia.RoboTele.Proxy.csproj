@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\RoboTele.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,13 +130,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj">
-      <Project>{a1bfe82a-1628-4a47-9c25-65ec1532cf66}</Project>
-      <Name>YekanPedia.RoboTele.Domain</Name>
-    </ProjectReference>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <ProjectReference Include="..\YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj">
+      <Project>{a2cc2a65-0cef-4e62-b8dd-7ae42b0a5d9e}</Project>
+      <Name>YekanPedia.RoboTele.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
