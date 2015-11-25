@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{693C2D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Domain", "YekanPedia.RoboTele.Domain\YekanPedia.RoboTele.Domain.csproj", "{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Data", "YekanPedia.RoboTele.Data\YekanPedia.RoboTele.Data.csproj", "{8ED7D91A-E656-40B9-9262-51E6F5691472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.Service", "YekanPedia.RoboTele.Service\YekanPedia.RoboTele.Service.csproj", "{C69A4435-53CE-4B33-A609-537B0F681622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YekanPedia.RoboTele.DependencyResolver", "YekanPedia.RoboTele.DependencyResolver\YekanPedia.RoboTele.DependencyResolver.csproj", "{55E68852-9717-4903-BB0C-4B7A33634E6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +31,18 @@ Global
 		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED7D91A-E656-40B9-9262-51E6F5691472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED7D91A-E656-40B9-9262-51E6F5691472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED7D91A-E656-40B9-9262-51E6F5691472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED7D91A-E656-40B9-9262-51E6F5691472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69A4435-53CE-4B33-A609-537B0F681622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69A4435-53CE-4B33-A609-537B0F681622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69A4435-53CE-4B33-A609-537B0F681622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69A4435-53CE-4B33-A609-537B0F681622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E68852-9717-4903-BB0C-4B7A33634E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E68852-9717-4903-BB0C-4B7A33634E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E68852-9717-4903-BB0C-4B7A33634E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E68852-9717-4903-BB0C-4B7A33634E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +50,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A9FC7CAC-69D9-4E97-A406-54FEBF670741} = {1D75065A-9865-4E7D-BBCE-FA085B90000C}
 		{A2CC2A65-0CEF-4E62-B8DD-7AE42B0A5D9E} = {693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}
+		{8ED7D91A-E656-40B9-9262-51E6F5691472} = {693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}
+		{C69A4435-53CE-4B33-A609-537B0F681622} = {693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}
+		{55E68852-9717-4903-BB0C-4B7A33634E6D} = {693C2D7D-A1C9-496E-A2BC-0E5EFF17506B}
 	EndGlobalSection
 EndGlobal
