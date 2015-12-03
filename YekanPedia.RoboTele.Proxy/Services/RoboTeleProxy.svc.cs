@@ -14,10 +14,10 @@
 
         public void SendMessage(List<SendMessageModel> model, SecurityModel security)
         {
-            try
-            {
-                if (security.UserName == AppSettings.UserName && security.Password == AppSettings.Password)
-                    foreach (var item in model)
+            if (security.UserName == AppSettings.UserName && security.Password == AppSettings.Password)
+                foreach (var item in model)
+                {
+                    try
                     {
                         Bot.SendMessage(new SendMessageRequest
                         {
@@ -25,11 +25,11 @@
                             Text = item.Message
                         });
                     }
-            }
-            catch (Exception e)
-            {
-                Console.Write(e.Message);
-            }
+                    catch (Exception e)
+                    {
+                        Console.Write(e.Message);
+                    }
+                }
         }
     }
 }
