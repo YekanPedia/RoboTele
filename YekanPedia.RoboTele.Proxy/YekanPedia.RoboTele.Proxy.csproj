@@ -111,6 +111,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\BusinessMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessMessages.resx</DependentUpon>
+    </Compile>
     <Compile Include="ControllerFactory\IocControllerFactory.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="AppSetting.cs">
@@ -160,6 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\RoboTele\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\BusinessMessages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>BusinessMessages.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

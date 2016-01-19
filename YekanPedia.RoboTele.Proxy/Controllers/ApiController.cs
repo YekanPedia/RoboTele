@@ -7,6 +7,7 @@
     using Domain.Responses.Types;
     using Service.Interfaces;
     using System.Text.RegularExpressions;
+    using Resources;
 
     public class ApiController : Controller
     {
@@ -23,7 +24,6 @@
         [HttpGet]
         public JsonResult GetUpdates()
         {
-
             try
             {
                 var updates = Bot.GetUpdates(new GetUpdatesRequest
@@ -65,7 +65,7 @@
             Bot.SendMessage(new SendMessageRequest
             {
                 ChatId = (int)chatId,
-                Text = $"Hi {senderUserName} , My name is YekanPediaBot, Please send me your email address to join together !",
+                Text = string.Format(BusinessMessages.Start, senderUserName),
             });
         }
 
@@ -81,7 +81,7 @@
                 Bot.SendMessage(new SendMessageRequest
                 {
                     ChatId = (int)chatId,
-                    Text = $"Sorry {senderUserName} !, Your Email is not correct, Please Send Again!",
+                    Text = string.Format(BusinessMessages.IncorrectEmail, senderUserName) ,
                     ReplyToMessageId = updateResponse.Message.MessageId
                 });
                 return;
@@ -93,17 +93,25 @@
             {
                 case UpdateResult.UserNotExist:
                     {
-                        returnText = $"Sorry {senderUserName} , your email address not registered in yekanpedia.org yet. please register in http://cms.yekanpedia.org and try again !";
+                        returnText = BusinessMessages.UserNotExist;
                         break;
                     }
                 case UpdateResult.Success:
                     {
-                        returnText = $"Thanks {senderUserName} , Your Email Address Have Been Added.";
+                        returnText = string.Format(BusinessMessages.EmailSaved, senderUserName);
+                        try
+                        {
+                            Bot.GetUserProfilePhotos(new GetUserProfilePhotosRequest { UserId = (int)chatId });
+                        }
+                        catch (Exception e)
+                        {
+                            Console.Write(e.Message);
+                        }
                         break;
                     }
                 case UpdateResult.Error:
                     {
-                        returnText = $"Sorry {senderUserName} , the process of save was considered error. please send again !";
+                        returnText = string.Format(BusinessMessages.Error, senderUserName);
                         break;
                     }
             }
